@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assigment12</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "Finland",
+      "Sweden",
+      "Norway",
+      "Denmark",
+      "Italy",
+      "Spain",
+      "Germany",
+      "Portugal",
+      "Netherland",
+      "Polan",
+      "Latvia",
+    ];
+    $( "#Eu_Countries" ).autocomplete({
+      source: availableTags
+    });
+    
+  } );
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( ".selector" ).datepicker({
+    showWeek: true
+    });
+  } );
+  </script>
+</head>
+<body>
+    <div class="ui-widget">
+    <label for="Eu_Countries">Tags: </label>
+    <input id="Eu_Countries">
+    </div>
+
+    <h1>Day</h1>
+    <Form>
+        <label for="datepicker">Valitse päivämäärä</label>
+        <input type="text" id="datepicker">
+    </Form>
+ 
+<label for=" type=range" id="age" min="0" max="140" value="0"></label>
+ 
+</body>
+</html>
